@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
+}
+/* nav designs */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F7F3;
+    padding: 1rem 5rem;
+}
+nav div:nth-child(2){
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}
+nav div:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+nav div:nth-child(3) img{
+    margin-right: 10px;
+}
+nav h1{
+    color: #111111;
+    font-size: 1.35rem;
+}
+nav button{
+    height: 3rem;
+    width: 6.8rem;
+    color: #111111;
+    font-size: 1.30rem;
+    background-color: #B4F461;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 300ms;
+    transform-origin: top left;
+    font-weight: 600;
+}
+nav button:hover{
+    transform: scale(1.07);
+}
+nav button:active{
+    transform: scale(1);
+}
+nav p{
+    color: #111111B2;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* all big screen  effects */
+@media screen and (min-width: 800px){
+    
+}
