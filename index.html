@@ -6,6 +6,7 @@
     <title>Assignment 5</title>
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
@@ -31,7 +32,8 @@
         </div>
     </nav>
     <main>
-            <!-- Card 1 -->
+        <section class="donate-section" id="donate-sec">
+                <!-- Card 1 -->
         <div>
             <img src="assets/noakhali.png" alt="Noakhali">
             <div>
@@ -76,8 +78,24 @@
                 </div>
             </div>
         </div>
+        </section>
+        <section class="history-section block" id="history-sec">
+            <!-- !!!!!Template!!!!! -->
+            <!-- <div>
+                <h2>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>   
+            </div> -->
+        </section>
+        <section>
+            <div id="popup" popover>
+                <h3 style="color: rgb(67, 71, 68); font-size: 1.7rem; font-weight: 600; ">Congrates!</h3><br>
+                <img src="assets/coin.png"><br>
+                <p>You Have Donated For Humankind</p>
+                <p>Successfully</p>
+                <button popovertarget="popup" popovertargetaction="hide">Close confirmation</button>
+            </div>
+        </section>
     </main>
-
 
     <script src="func.js"></script>
 </body>

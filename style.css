@@ -86,14 +86,18 @@ nav p{
     border: none !important;
 }
 /* Body part */
-main{
+/* main{
+
+} */
+.donate-section{
     margin-top: 12rem;
     padding: 1rem 9rem;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
 }
-main > div{
+/* .donate-section{display: none;} */
+.donate-section > div{
     display: flex;
     justify-content: space-between;
     alig-items: flex-start;
@@ -101,23 +105,23 @@ main > div{
     padding: 1.5rem;
     border-radius: 8px;
 }
-main > div > img{
+.donate-section > div > img{
     width: 100%;
     max-width: 30rem;
     height: auto;
 }
-main > div > div{
+.donate-section > div > div{
     max-width: 32rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-main h2{
+.donate-section h2{
     font-size: 1.5rem;
     color: #111111;
     font-weight: 600;
 }
-main .paragraph{
+.donate-section .paragraph{
     color: #111111B2;
     font-weight: 400;
     font-size: 1rem;
@@ -125,7 +129,7 @@ main .paragraph{
 .para h2{
     margin-bottom: 1rem;
 }
-main .people-donate-amount{
+.donate-section .people-donate-amount{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,6 +175,73 @@ input::-webkit-inner-spin-button {
     height: 3.2rem;
     transition: all 200ms;
 }
+.block div{
+    display: none;
+}
+.history-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.history-section  div{
+    width: 71.25rem; 
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid rgb(156 163 175);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+.history-section h2{
+    color: #111111;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+}
+.history-section p{
+    color: #111111;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+#popup{
+    max-height: fit-content;
+    min-width: 19rem;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    padding: 1.5rem;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#popup button{
+    height: 2.2rem;
+    width: 9.5rem;
+    color: #757474;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background-color: #e6e8e6;
+    cursor: pointer;
+    transition: all 200ms;
+    margin-top: 1rem;
+}
+#popup button h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#popup button P{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
 
 
 
@@ -199,5 +270,15 @@ input::-webkit-inner-spin-button {
     .donation-part input:focus { 
         outline: none !important;
         border-color: #719ECE;
+     }
+     /* Modal */
+     #popup button:hover{
+        transform: scale(1.05);
+     }
+     #popup button:active{
+        transform: scale(1);
+     }
+     #popup{
+        width: 30rem;
      }
 }
