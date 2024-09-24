@@ -22,13 +22,13 @@
             <!-- wallet -->
             <div>
                 <img src="assets/coin.png" alt="Wallet coin image" width="28px" height="28px">
-                <p>5500</p>
+                <p id="wallet-balance">5500</p>
                 <p>BDT</p>
             </div>
         </div>
         <div class="donation-and-history">
-            <button class="active">Donation</button>
-            <button class="a">History</button>
+            <button class="active" id="donateSectionButton">Donation</button>
+            <button class="a" id="historySectionButton">History</button>
         </div>
     </nav>
     <main>
@@ -37,14 +37,14 @@
         <div>
             <img src="assets/noakhali.png" alt="Noakhali">
             <div>
-                <button class="people-donate-amount"><img src="assets/coin.png"><p>0</p><p>BDT</p></button>
+                <button class="people-donate-amount"><img src="assets/coin.png"><p id="total-donation">0</p><p>BDT</p></button>
                 <div class="para">
                     <h2>Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="paragraph"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 </div>
                 <div class="donation-part">
-                    <input type="number" placeholder="Write Donation Amount">
-                    <button>Donate Now</button>
+                    <input id="input1" type="number" placeholder="Write Donation Amount">
+                    <button id="button1" onclick="donateButton(document.getElementById('total-donation'), document.getElementById('input1'), document.getElementById('button1'))">Donate Now1</button>
                 </div>
             </div>
         </div>
@@ -52,14 +52,14 @@
         <div>
             <img src="assets/feni.png" alt="Feni Flood" >
             <div>
-                <button class="people-donate-amount"><img src="assets/coin.png"><p>0</p><p>BDT</p></button>
+                <button class="people-donate-amount"><img src="assets/coin.png"><p id="total-donation2">0</p><p>BDT</p></button>
                 <div class="para">
-                    <h2>Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2>Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="paragraph"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 </div>
                 <div class="donation-part">
-                    <input type="number" placeholder="Write Donation Amount">
-                    <button>Donate Now</button>
+                    <input id="input2" type="number" placeholder="Write Donation Amount">
+                    <button id="button2" onclick="donateButton(document.getElementById('total-donation2'), document.getElementById('input2'), document.getElementById('button2'))">Donate Now2</button>
                 </div>
             </div>
         </div>
@@ -67,19 +67,19 @@
         <div>
             <img src="assets/quota-protest.png" alt="Quota movement">
             <div>
-                <button class="people-donate-amount"><img src="assets/coin.png"><p>0</p><p>BDT</p></button>
+                <button class="people-donate-amount"><img src="assets/coin.png"><p id="total-donation3">0</p><p>BDT</p></button>
                 <div class="para">
-                    <h2>Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2>Aid for Injured in the Quota Movement</h2>
                 <p class="paragraph"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 </div>
                 <div class="donation-part">
-                    <input type="number" placeholder="Write Donation Amount">
-                    <button>Donate Now</button>
+                    <input id="input3" type="number" placeholder="Write Donation Amount">
+                    <button id="button3" onclick="donateButton(document.getElementById('total-donation3'), document.getElementById('input3'), document.getElementById('button3'))">Donate Now3</button>
                 </div>
             </div>
         </div>
         </section>
-        <section class="history-section block" id="history-sec">
+        <section class="history-section" id="history-sec">
             <!-- !!!!!Template!!!!! -->
             <!-- <div>
                 <h2>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>

@@ -139,8 +139,9 @@ nav p{
     font-weight: 400;
     border: none;
     border-radius: 8px;
-    height: 2.75rem;
-    width: 6.8rem;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
     background-color: #1111110D;
 }
 .donation-part{
@@ -175,23 +176,37 @@ input::-webkit-inner-spin-button {
     height: 3.2rem;
     transition: all 200ms;
 }
-.block div{
+.hide div{
     display: none;
+}
+.extra{
+    visibility: hidden;
 }
 .history-section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-height: fit-content;
+    max-width: fit-content;
 }
 .history-section  div{
-    width: 71.25rem; 
+    max-width: fit-content;
     max-height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+.history-section  div div{
     border: 2px solid rgb(156 163 175);
     border-radius: 8px;
-    padding: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .history-section h2{
     color: #111111;
