@@ -96,3 +96,26 @@ historySectionButton.addEventListener('click', ()=>{
         historySection.classList.remove('extra')
     }
 })
+
+function btn1() {
+    donateSection.classList.remove('hide')
+    donateSectionButton.classList.add('active')
+    historySection.classList.add('hide')
+    historySectionButton.classList.remove('active')
+}
+function btn2() {
+    donateSection.classList.add('hide')
+    donateSectionButton.classList.remove('active')
+    historySection.classList.remove('hide')
+    historySectionButton.classList.add('active')
+    if(historySection.classList.contains('extra')){
+        historySection.classList.remove('extra')
+    }
+}
+
+function open() {
+    document.getElementById('opens').style.display = 'block';
+}
+function close() {
+    document.getElementById('opens').style.display = 'none';
+}

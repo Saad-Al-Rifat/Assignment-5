@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
+    <nav class="first-nav">
         <!-- Blog -->
         <div class="nav-container">
             <div>
@@ -29,6 +29,33 @@
         <div class="donation-and-history">
             <button class="active" id="donateSectionButton">Donation</button>
             <button class="a" id="historySectionButton">History</button>
+        </div>
+    </nav>
+    <!-- another nav -->
+    <nav class="second-nav">
+        <!-- Blog -->
+        <div class="nav-container">
+            <!-- Logo -->
+            <div style="font-weight: 500; font-size: 2.5rem;">=</div>
+            <div>
+                <img src="assets/logo.png" alt="Brand logo" class="asd"><h1>Donate Bangladesh</h1>
+            </div>
+            <!-- wallet -->
+        </div>
+        <!-- <div class="opens" id="opens" style="height: 100%;">
+            <div>
+                <button id="blog" class="rt">Blog</button>
+                <div class="coinss">
+                    <img src="assets/coin.png" alt="Wallet coin image" width="28px" height="28px">
+                    <p id="wallet-balance">5500</p>
+                    <p>BDT</p>
+                </div>
+            </div>
+            <div style="font-weight: 500; font-size: 2rem;" onclick="close()">X</div>
+        </div> -->
+        <div class="donation-and-history">
+            <button onclick="btn1()" class="active" id="donateSectionButton">Donation</button>
+            <button onclick="btn2()" class="a" id="historySectionButton">History</button>
         </div>
     </nav>
     <main>
