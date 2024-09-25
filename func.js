@@ -1,5 +1,7 @@
 const wallet = document.getElementById('wallet-balance');
-
+document.getElementById('blog').addEventListener('click', ()=>{
+    window.location.href = './blog.html'
+})
 let balance = 5500;
 wallet.innerText = balance;
 

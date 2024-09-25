@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
+}
+
+/* Nav designs */
+nav {
+    padding-bottom: 1rem;
+    width: 100%;
+    z-index: 1;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F7F3;
+    padding: 1rem 5rem;
+}
+.nav-container div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.nav-container div:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+.nav-container div:nth-child(3) img {
+    margin-right: 10px;
+}
+nav h1 {
+    color: #111111;
+    font-size: 1.35rem;
+}
+.nav-container button {
+    height: 3rem;
+    width: 6.8rem;
+    color: #111111;
+    font-size: 1.30rem;
+    background-color: #B4F461;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 300ms;
+    font-weight: 600;
+}
+nav p {
+    color: #111111B2;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+main {
+    padding: 1rem 8%;
+}
+main h1{
+    text-align: center;
+}
+/* Accordion styles */
+.accordion-container {
+    margin-bottom: 1rem; /* Gap between each accordion */
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 400ms;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.accordion:hover {
+    background-color: #dcdcdc;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 400ms;
+    background-color: #f1f1f1;
+    padding: 0 18px;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #444;
+    /* max-height: fit-content; */
+    /* padding: 1.3rem; */
+}
+
+/* Open panel */
+.active + .panel {
+    max-height: 100px; /* Adjust based on content size */
+    padding: 18px;
+}
+
+/* Active state */
+.accordion.active {
+    background-color: #ccc;
+    color: #222;
+}
+.burger{
+    height: 100%;
+    max-width: fit-content;
+    background-color: whitesmoke;
+    /* padding-top: 1.3rem;
+    padding-left: 1rem; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation-name: open;
+    animation-duration: 400ms;
+}
+@keyframes open{
+    o%{
+        left: -20%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.burger .coin{
+    display: flex;
+    column-gap: 0.2rem;
+}
+.burger .home{
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #29a329;
+    color: white;
+    border-radius: 4px;
+    margin-top: 2rem;
+   }
+.abc{
+    margin-right: 3rem;
+}
+.second-nav{
+    display: none;
+}
+.second-nav div{
+    padding: 0.5rem 1rem;
+}
+.nav2:nth-child(1){
+    font-size: 2.3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-weight: 600;
+}
+#close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* mobiles */
+@media (max-width: 580px) {
+    .second-nav{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
+    .nav-container-f{
+        display: none;
+    }
+}
+/* tablet */
+@media (min-width: 581px) and (max-width: 868px) {
+    .second-nav{
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
+    .nav-container-f{
+        display: node;
+    }
+}
+/* All big screen effects */
+@media screen and (min-width: 800px) {
+    .nav-container button:hover {
+        transform: scale(1.07);
+    }
+    .nav-container button:active {
+        transform: scale(1);
+    }
+}

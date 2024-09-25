@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Nav  -->
+    <nav>
+        <div class="nav-container nav-container-f">
+            <div>
+                <button id="home" onclick="home()" >Home</button>
+            </div>
+            <!-- Logo -->
+            <div>
+                <img src="assets/logo.png" alt="Brand logo"><h1>Donate Bangladesh</h1>
+            </div>
+            <!-- Wallet -->
+            <div>
+                <img src="assets/coin.png" alt="Wallet coin image" width="28px" height="28px">
+                <p id="wallet-balance">5500</p>
+                <p>BDT</p>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- another nav -->
+ <nav class="second-nav">
+    <div class="nav-container nav2">
+        <div id="open">=</div>
+        <div>
+            <img src="assets/logo.png" alt="Brand logo"><h1>Donate Bangladesh</h1>
+        </div>
+    </div>
+    <div class="burger" id="burger">
+        <div class="abc">
+            <div>
+                <button id="home" onclick="home()" class="home">Home</button>
+            </div>
+            <div class="coin">
+                <img src="assets/coin.png" alt="Wallet coin image" width="28px" height="28px">
+                <p id="wallet-balance">5500</p>
+                <p>BDT</p>
+            </div>
+        </div>
+        <div id="close" style="margin-top: 1rem; font-weight: 500; font-size: 1.5rem; height: fit-content; width: fit-content; background-color: rgba(202, 190, 190, 0.425); border-radius: 10px;">X</div>
+    </div>
+ </nav>
+    <main>
+        <h2 style="text-align: center; margin-bottom: 1rem;">FAQ</h2>
+
+        <div class="accordion-container">
+            <button class="accordion">What is the Document Object Model (DOM)?<span class="plus-minus">+</span></button>
+            <div class="panel">
+                <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the document as a tree structure, where each node is an object (e.g., elements, attributes, text). Using languages like JavaScript, developers can dynamically access, modify, or delete these objects. This enables real-time updates to content, structure, and styles on a webpage. The DOM is key to making web pages interactive.</p>
+            </div>
+        </div>
+
+        <div class="accordion-container">
+            <button class="accordion">How do you select an element from the DOM?<span class="plus-minus">+</span></button>
+            <div class="panel">
+                <p>To select an element from the DOM, you can use several methods in JavaScript. The getElementById(id) method selects a single element by its unique ID. For multiple elements, getElementsByClassName(className) returns a live collection of elements with a specific class, while getElementsByTagName(tagName) retrieves all elements of a particular tag. Additionally, querySelector(selector) selects the first matching element using a CSS selector, and querySelectorAll(selector) returns all matching elements as a static NodeList. These methods facilitate easy manipulation of HTML elements on a web page.</p>
+            </div>
+        </div>
+
+        <div class="accordion-container">
+            <button class="accordion">What is event delegation in the context of the DOM, and why is it useful?<span class="plus-minus">+</span></button>
+            <div class="panel">
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events for multiple child elements. When an event occurs on a child, it bubbles up to the parent, which can then handle it. This approach improves performance by reducing the number of listeners and simplifies code maintenance. It also allows newly added child elements to automatically inherit the parent’s event handling. Overall, event delegation promotes efficient and manageable event handling in dynamic web applications.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>
